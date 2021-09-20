@@ -1,9 +1,15 @@
-const eqArrays = function(arr1, arr2) {
-const assertArrayEqual = arr1.toString() === arr2.toString();
-if (assertArrayEqual === true) {
-  console.log("These arrays are identical.")
-} else {
-  console.log("These arrays are not identical.")
-} return
+const eqArrays = require('./eqArrays');
+
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1, arr2)) {
+    console.log("These arrays are identical.")
+  } else {
+    console.log("These arrays are not identical.")
+  }
 }
-eqArrays([1, 2, 3], [1, 2, 3]);
+  module.exports = assertArraysEqual
+ 
+
+  // const eqArrays = function(arr1, arr2) {
+  //   return arr1.toString() === arr2.toString();
+  // }
