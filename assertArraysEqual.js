@@ -8,8 +8,3 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 }
   module.exports = assertArraysEqual
- 
-
-  // const eqArrays = function(arr1, arr2) {
-  //   return arr1.toString() === arr2.toString();
-  // }

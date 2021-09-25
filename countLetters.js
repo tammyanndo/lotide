@@ -10,20 +10,20 @@ const eqArrays = function(arr1, arr2) {
   return arr1.toString() === arr2.toString();
 }
 
-const countLetters = function(allLetters) {
-  const results = {};
-  for (const letter of allLetters) {
-    console.log(letter);
-    if (letter) {
-      if (results[letter]) {
-        results[letter] +=1;
-      } else {
-        results[letter] = 1;
+// const countLetters = function(allLetters) {
+//   const results = {};
+//   for (const letter of allLetters) {
+//     console.log(letter);
+//     if (letter) {
+//       if (results[letter]) {
+//         results[letter] +=1;
+//       } else {
+//         results[letter] = 1;
       
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
 
 function count (string) {
   const count = {}

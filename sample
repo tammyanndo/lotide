@@ -1,0 +1,17 @@
+function findKey(dataObj, value){
+
+    for(var key in dataObj){
+        if(dataObj.hasOwnProperty(key) && dataObj[key] == value){
+            return key;
+        }
+    }
+
+    return false;
+
+}
+
+var locs = {'Aberdeen': 304, 'Aberystwith': 109, 'Belfast': 219, 'Birmingham': 24, 'Brighton': 147, …}
+
+console.log(findKey(locs, 304));
+
+let least = Math.min(...arr);

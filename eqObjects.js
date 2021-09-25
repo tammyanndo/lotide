@@ -36,7 +36,20 @@ const eqObjects = function (object1, object2) {
 
 // console.log(eqObjects(ob1, ob2));
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
 
-assertEqual(eqObjects(cd, dc), true);
+// assertEqual(eqObjects(cd, dc), true);
+
+let obj1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+let obj2 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+assertEqual(eqObjects(obj1, obj2), true)
